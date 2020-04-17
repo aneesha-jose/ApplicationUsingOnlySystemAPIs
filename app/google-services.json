@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "161706908687",
+    "firebase_url": "https://assignments-781d4.firebaseio.com",
+    "project_id": "assignments-781d4",
+    "storage_bucket": "assignments-781d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161706908687:android:4dc3b202f2933db1de977a",
+        "android_client_info": {
+          "package_name": "com.aneeshajose.headlines"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161706908687-6js7ge8jf2r1u76nv5hoiu69jgmb9r6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBETJtWyVwZgvXc8jtCHIFV-ojvluB4cdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161706908687-6js7ge8jf2r1u76nv5hoiu69jgmb9r6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

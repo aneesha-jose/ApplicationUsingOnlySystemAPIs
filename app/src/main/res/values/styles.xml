@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AccentOutlineButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_button_size</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@drawable/border_rectangle_accent</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="RobotoMedium">
+        <item name="android:textSize">@dimen/toolbar_title_textsize</item>
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:text">@string/app_name</item>
+    </style>
+
+    <style name="ErrorHeader" parent="RobotoBold">
+        <item name="android:textSize">@dimen/error_title_size</item>
+        <item name="android:textColor">@color/error_header</item>
+        <item name="android:text">@string/something_went_wrong</item>
+    </style>
+
+    <style name="ErrorDescription" parent="RobotoRegular">
+        <item name="android:textSize">@dimen/error_desc_size</item>
+        <item name="android:textColor">@color/error_description</item>
+        <item name="android:text">@string/alien_blocking_signal</item>
+    </style>
+
+    <style name="ItemHeader" parent="RobotoBold">
+        <item name="android:textSize">@dimen/item_header_size</item>
+        <item name="android:textColor">@color/general_text</item>
+    </style>
+
+    <style name="ItemAuthor" parent="RobotoRegular">
+        <item name="android:textSize">@dimen/item_author_size</item>
+        <item name="android:textColor">@color/general_text</item>
+    </style>
+
+    <style name="ItemDescription" parent="RobotoRegular">
+        <item name="android:textSize">@dimen/item_desc_size</item>
+        <item name="android:textColor">@color/general_text</item>
+    </style>
+
+    <!--fonts-->
+    <style name="RobotoRegular">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="RobotoBold">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="RobotoMedium">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+</resources>

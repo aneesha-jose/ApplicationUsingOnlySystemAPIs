@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".displayrepos.DisplayTrendingReposActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlListOptions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height">
+
+            <TextView
+                android:id="@+id/tvFilter"
+                style="@style/ItemAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/view"
+                android:layout_toLeftOf="@+id/view"
+                android:drawableLeft="@drawable/ic_filter_list"
+                android:gravity="center"
+                android:paddingStart="@dimen/item_padding_end"
+                android:paddingLeft="@dimen/item_padding_end"
+                android:text="@string/filter_by_source" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/divider_height"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/tvSort"
+                style="@style/ItemAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/view"
+                android:layout_toRightOf="@+id/view"
+                android:drawableLeft="@drawable/ic_sort"
+                android:gravity="center"
+                android:paddingStart="@dimen/item_padding_end"
+                android:paddingLeft="@dimen/item_padding_end"
+                android:text="@string/sort_by_date" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlListOptions"
+            app:shimmer_auto_start="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_placeholder" />
+
+                <include layout="@layout/item_placeholder" />
+
+                <include layout="@layout/item_placeholder" />
+
+                <include layout="@layout/item_placeholder" />
+
+                <include layout="@layout/item_placeholder" />
+
+                <include layout="@layout/item_placeholder" />
+
+                <include layout="@layout/item_placeholder" />
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRepoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlListOptions"
+            android:overScrollMode="never"
+            tools:listitem="@layout/item_article" />
+
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

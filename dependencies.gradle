@@ -1,0 +1,37 @@
+ext.versions = [
+
+        appCompat         : '1.1.0',
+
+        cardview          : '1.0.0',
+
+        recyclerview      : '1.1.0',
+
+        swiperefreshlayout: '1.0.0',
+
+        genericadapters   : '1.0',
+
+        shimmer           : '0.5.0',
+
+        dagger            : '2.27',
+
+        butterKnife       : '10.2.1',
+
+        //Glide
+        glide             : '4.11.0',
+
+        gson              : '2.8.5',
+
+        fcm               : '20.1.5',
+
+        multidex          : '1.0.3',
+
+        //Testing
+        robolectric       : '4.3.1',
+        restMock          : '0.4.1',
+        testRunner        : '1.2.0',
+        espressoCore      : '3.2.0',
+        jUnit             : '1.1.1',
+        truth             : '1.2.0',
+        testCore          : '1.2.0',
+
+]

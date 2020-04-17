@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/item_margin"
+    android:animateLayoutChanges="true"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/item_padding_end"
+    android:paddingRight="@dimen/item_padding_end"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/ic_sort" />
+
+        <ImageView
+            android:id="@+id/ivStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivProfile"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/item_padding_end"
+            card_view:srcCompat="@drawable/ic_star_border" />
+
+        <TextView
+            android:id="@+id/tvItemHeader"
+            style="@style/ItemHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivProfile"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginTop="@dimen/item_margin_top"
+            android:layout_marginBottom="@dimen/item_header_margin_bottom"
+            android:layout_toStartOf="@+id/ivStar"
+            android:layout_toLeftOf="@+id/ivStar"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvItemDesc"
+            style="@style/ItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemHeader"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:layout_marginBottom="@dimen/item_margin_bottom"
+            android:fontFamily="@font/roboto_medium"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvItemAuthor"
+            style="@style/ItemAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemDesc"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginBottom="@dimen/item_desc_margin_bottom"
+            android:drawableStart="@drawable/ic_face_black"
+            android:drawableLeft="@drawable/ic_face_black"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:gravity="center_vertical"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvSource"
+            style="@style/ItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemAuthor"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginBottom="@dimen/item_desc_margin_bottom"
+            android:drawableStart="@drawable/ic_description"
+            android:drawableLeft="@drawable/ic_description"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvPublishedOn"
+            style="@style/ItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSource"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginBottom="@dimen/item_desc_margin_bottom"
+            android:drawableStart="@drawable/ic_event"
+            android:drawableLeft="@drawable/ic_event"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/app_name" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

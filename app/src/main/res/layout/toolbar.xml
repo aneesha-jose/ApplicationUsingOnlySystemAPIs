@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tbBaseToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/colorPrimary"
+    app:theme="@style/ThemeOverlay.AppCompat.Light"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/ToolbarTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/toolbar_title_top_margin"
+            android:layout_marginEnd="?android:attr/actionBarSize"
+            android:layout_marginBottom="@dimen/toolbar_title_bottom_margin"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Title" />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+

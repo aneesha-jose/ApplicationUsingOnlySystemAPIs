@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_title_top_margin">14dp</dimen>
+    <dimen name="toolbar_title_bottom_margin">14dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="box_radius">4dp</dimen>
+    <dimen name="button_margin">16dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="err_header_margin_top">24dp</dimen>
+    <dimen name="err_desc_margin_top">8dp</dimen>
+    <dimen name="img_profile_dimen">32dp</dimen>
+    <dimen name="img_cv_radius">16dp</dimen>
+    <dimen name="item_margin_top">21dp</dimen>
+    <dimen name="item_header_margin_bottom">16dp</dimen>
+    <dimen name="item_margin_bottom">21dp</dimen>
+    <dimen name="item_desc_margin_bottom">8dp</dimen>
+    <dimen name="item_padding_end">16dp</dimen>
+    <dimen name="language_circle_size">8dp</dimen>
+    <dimen name="drawable_padding">4dp</dimen>
+    <dimen name="item_info_margin_start">16dp</dimen>
+    <dimen name="placeholder_author_width">100dp</dimen>
+    <dimen name="placeholder_header_width">260dp</dimen>
+    <dimen name="shimmer_radius">8dp</dimen>
+    <dimen name="placeholder_margin_end">36dp</dimen>
+    <dimen name="placeholder_text_height">12dp</dimen>
+    <dimen name="item_cardview_margin_top">30dp</dimen>
+    <dimen name="item_author_size">12sp</dimen>
+
+    <!--font sizes-->
+    <dimen name="toolbar_title_textsize">21sp</dimen>
+    <dimen name="text_button_size">15sp</dimen>
+    <dimen name="error_title_size">18sp</dimen>
+    <dimen name="error_desc_size">15sp</dimen>
+    <dimen name="item_header_size">15sp</dimen>
+    <dimen name="item_desc_size">12sp</dimen>
+    <dimen name="splash_logo_title">50sp</dimen>
+    <dimen name="placeholeder_margin_top">4dp</dimen>
+    <dimen name="placeholeder_last_margin_top">12dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+
+
+</resources>

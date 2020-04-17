@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/vDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@+id/tbBaseToolbar"
+            android:background="@color/divider" />
+
+        <ViewStub
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vDivider"
+            android:orientation="vertical" />
+
+        <include
+            android:id="@+id/tbBaseToolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height" />
+
+        <RelativeLayout
+            android:id="@+id/rlErrorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vDivider"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rlErrorLayoutInner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/ivError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/nointernet_connection" />
+
+                <TextView
+                    android:id="@+id/tvErrorHeader"
+                    style="@style/ErrorHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivError"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/err_header_margin_top" />
+
+                <TextView
+                    android:id="@+id/tvErrorDescription"
+                    style="@style/ErrorDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvErrorHeader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/err_desc_margin_top" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnRetry"
+                style="@style/AccentOutlineButton"
+                android:layout_alignParentBottom="true"
+                android:text="@string/retry" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

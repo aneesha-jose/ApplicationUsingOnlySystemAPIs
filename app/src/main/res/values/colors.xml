@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#604562</color>
+    <color name="colorPrimaryDark">#361d38</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <!--view colors-->
+    <color name="divider">#929292</color>
+
+    <!--text colors-->
+    <color name="error_header">#4A4A4A</color>
+    <color name="error_description">#929292</color>
+    <color name="general_text">#52575C</color>
+    <color name="title_text">#25282B</color>
+    <color name="shimmerBackground">#dddddd</color>
+
+</resources>
